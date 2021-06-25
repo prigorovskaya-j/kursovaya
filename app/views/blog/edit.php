@@ -2,13 +2,44 @@
     <section class="page-name">
         <span><?= $title ?></span>
     </section>
+    <script src="https://cdn.tiny.cloud/1/if69df5fillnthdouz823yutwpn1yq4atwwhmxm0se9x2jyz/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
+    <script>
+        tinymce.init({
+            selector: '#editor',
+          //  toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent'
+        });
+        $( document ).ready(function() {
+
+            $('#buttonpost').on("click", function(){
+                tinyMCE.triggerSave();
+                const value = $("textarea#editor").val();
+                console.log(value);
+                $("#display-post").html(value);
+                $(".texteditor-container").hide();
+                return false;
+            });
+
+        });
+    </script>
     <div class="modal edit-blog-modal">
         <div class="modal__title">
             Редактирование блога
         </div>
+
+        <div class="texteditor-container">
+            <h1> Add tinymce editor in PHP or HTML </h1>
+            <textarea name="editor" id="editor"></textarea>
+            <input type="button" id="buttonpost" value="Publish Post"  />
+        </div>
+        <div id="display-post" style="width:700px;" ></div>
+
         <div class="modal__desc">
-            <form action="/blog/editRecord" method="post" class="main-form">
+         <!--   <form method="post">
+                <textarea id="mytextarea">Hello, World!</textarea>
+            </form>-->
+
+       <!--     <form action="/blog/editRecord" method="post" class="main-form">
                 <label for="fio">
                     ID блога
                     <input class="blog-id" type="text" name="blog_id">
@@ -27,7 +58,7 @@
                 <div class="modal__btn">
                     <button type="submit" class="main-btn">Изменить</button>
                 </div>
-            </form>
+            </form>-->
         </div>
     </div>
 
