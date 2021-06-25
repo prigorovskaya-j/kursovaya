@@ -8,13 +8,13 @@ class AboutMeController extends Controller {
 
     public function indexAction(){
         $vars = [
-            "img" => "/public/img/1.jpg",
+            "img" => "/public/img/Книжный_магазин.jpg",
             "text" => "<p> Немного о компании~</p>
-    <p>Делаем то-то и то-то.</p>
-    <p>А еще это</p>
-    <p>А находимся мы тут.</p>
-    <p>А вот и карта</p>
-    <p></p>",
+                        <p>Делаем то-то и то-то.</p>
+                        <p>А еще это</p>
+                        <p>А находимся мы тут.</p>
+                        <p>А вот и карта</p>
+                        <p></p>",
             "menuIndex" => 2
         ];
 

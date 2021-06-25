@@ -65,6 +65,7 @@ class BlogController extends Controller
 
     public function editAction()
     {
+
         AdminPanelController::authenticate();
 
         $blogRecords = BlogModel::paginate(self::PAGES);
