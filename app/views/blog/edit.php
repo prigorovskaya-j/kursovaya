@@ -3,9 +3,9 @@
         <span><?= $title ?></span>
     </section>
 
-    <div class="modal edit-blog-modal">
+    <div class="edit-blog-modal">
         <div class="modal__title">
-            Редактирование блога
+            Редактирование новости
         </div>
         <div class="modal__desc">
             <form action="/blog/editRecord" method="post" class="main-form">
@@ -27,6 +27,7 @@
                 <div class="modal__btn">
                     <button type="submit" class="main-btn">Изменить</button>
                 </div>
+
             </form>
         </div>
     </div>
@@ -51,6 +52,7 @@
                 <textarea id="text" name="text"><?php if( !empty($_POST["text"]) ) echo $_POST["text"]; ?></textarea>
                 <p class="error"></p>
             </div>
+            
 
             <button
                     id="sendBtn"

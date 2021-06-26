@@ -8,7 +8,7 @@ use app\core\Model;
 
 class CatalogModel extends BaseActiveRecord
 {
-    protected static $tablename = 'blog';
+    protected static $tablename = 'catalog';
 
     public $id;
     public $created_at;
@@ -19,9 +19,9 @@ class CatalogModel extends BaseActiveRecord
     public function __construct()
     {
         parent::__construct();
-        $this->validator->SetRule("title", "isEmpty", "Тема сообщения");
+        $this->validator->SetRule("title", "isEmpty", "Название книги");
+        $this->validator->SetRule("text", "isEmpty", "Описание книги");
         $this->validator->SetRule("img", "isEmpty", "Изображение");
-        $this->validator->SetRule("text", "isEmpty", "Текст сообщения");
     }
 
     public function Validate($postData){

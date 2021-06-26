@@ -9,7 +9,7 @@ class AlbumModel extends Model {
 
     public function generatePhotoNames(){
         for ($i = 1; $i <= 15; $i++){
-            $this->photoNames["public/img/$i.jpg"] = "Рисунок $i";
+            $this->photoNames["public/img/$i.jpg"] = "Автор $i";
         }
     }
 

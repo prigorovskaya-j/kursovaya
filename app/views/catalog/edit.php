@@ -23,6 +23,10 @@
                     Текст сообщения
                     <input type="text" name="text">
                 </label>
+                <label for="text">
+                    Изображение
+                    <input type="file" name="text">
+                </label>
 
                 <div class="modal__btn">
                     <button type="submit" class="main-btn">Изменить</button>
@@ -51,6 +55,12 @@
                 <textarea id="text" name="text"><?php if( !empty($_POST["text"]) ) echo $_POST["text"]; ?></textarea>
                 <p class="error"></p>
             </div>
+            <div class="tooltip">
+                <p>Изображение</p>
+                Изображение
+                <input type="file" name="text"><?php if( !empty($_POST["img"]) ) echo $_POST["img"]; ?>
+                <p class="error"></p>
+            </div>
 
             <button
                     id="sendBtn"
@@ -77,6 +87,7 @@
                 <tr>
                     <th>Тема сообщения</th>
                     <th>Текст сообщения</th>
+                    <th>Изображение</th>
                     <th>Дата добавления</th>
                     <th></th>
                 </tr>
@@ -88,6 +99,9 @@
 
                         <td class="blog-text">
                             <?= $blogRecord->text ?>
+                        </td>
+                        <td class="blog-img">
+                            <img src="<?= $blogRecord->img ?>" alt=""/>
                         </td>
                         <td class="blog-created-at">
                             <?= $blogRecord->created_at ?>

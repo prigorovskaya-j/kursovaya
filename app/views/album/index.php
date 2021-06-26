@@ -1,6 +1,6 @@
 <main>
     <section class="page-name">
-        <span>Фотоальбом</span>
+        <span>Наши авторы</span>
     </section>
     <div class="wrapper_album_img">
         <div id="black_bg"></div>

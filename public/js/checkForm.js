@@ -36,29 +36,6 @@ function checkFio(fio) {
   }
 }
 
-// =======проверка телефона=======
-function checkPhone(phone){
-  if( checkInput(phone.val()) ){
-    showError(phone, "Заполните поле телефон!");
-    errors.phone = true;
-  } else if (phone.val().substr(0, 2) != "+3" && phone.val().substr(0, 2) != "+7") {
-    showError(phone, "Неверный код страны");
-    errors.phone = true;
-  } else if (phone.val().length - 1 < 10 || phone.val().length - 1 > 12) {
-      showError(phone, "Неверная длина телефона");
-      errors.phone = true;
-  } else if (isNaN(phone.val().substr(2, 11))) {
-      showError(phone, "Вводить можно только цифры");
-      errors.phone = true;
-  } else if (phone.val().substr(2, 11).includes(" ")) {
-      showError(phone, "Нельзя вводить пробелы");
-      errors.phone = true;
-  } else {
-    hideError(phone);
-    delete errors.phone;
-  }
-}
-
 // =======показываем ошибку=======
 function showError(field, errorMessage) {
   let errorText = field.next();
@@ -134,23 +111,6 @@ function resetForm() {
 }
 
 // =======проверяем форму целиком=======
-function sendForm() {
-  let fio = $("#fio");
-  let phone = $("#phone");
-  let email = $("#email");
-  let message = $("#message");
-  let birthday = $("#birthday");
-
-  // checkFio(fio);
-  showInputError(birthday, birthday.attr("data-error-text"));
-  showInputError(email, email.attr("data-error-text"));
-  showInputError(message, message.attr("data-error-text"));
-  checkPhone(phone);
-
-  if( Object.keys(errors).length == 0 ){
-    $(".contact-form")[0].submit();
-  }
-}
 
 $(".btn-show-modal").on("click", function(){
   let modalText = $(this).attr("data-modal-text");

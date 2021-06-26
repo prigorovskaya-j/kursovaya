@@ -55,8 +55,8 @@
             <table>
                 <tr>
                     <th>Тема сообщения</th>
-                    <th>Изображение</th>
                     <th>Текст сообщения</th>
+                    <th>Изображение</th>
                     <th>Дата добавления</th>
                 </tr>
                 <?php foreach ($messages as $message): ?>
@@ -65,10 +65,10 @@
                             <?= $message->title ?>
                         </td>
                         <td>
-                            <img src="/public/img/<?= $message->img ?>" alt="">
+                            <?= $message->text ?>
                         </td>
                         <td>
-                            <?= $message->text ?>
+                            <img src="/public/img/<?= $message->img ?>" alt="">
                         </td>
                         <td>
                             <?= $message->created_at ?>

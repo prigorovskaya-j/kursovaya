@@ -11,11 +11,11 @@ class AdminPanelModel extends BaseActiveRecord
     public function __construct()
     {
         $this->adminItems = [
-            "/blog/edit" => "Редактировать блог",
-            "/blog/load" => "Загрузить сообщения блога",
-            "/guest-book/load" => "Загрузить файл для гостевой книги",
-            "/catalog/edit" => "Редактировать  товар",
-            "/catalog/load" => "Добавить товар",
+            "/blog/edit" => "Редактировать новость",
+            "/blog/load" => "Загрузить новость",
+            "/guest-book/load" => "Загрузить файл для книги предложений",
+            "/catalog/edit" => "Редактировать  каталог",
+            "/catalog/load" => "Добавить в каталог",
             "/admin/logout" => "Выйти из системы",
         ];
     }

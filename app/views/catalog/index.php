@@ -8,8 +8,8 @@
             <table>
                 <tr>
                     <th>Наименование товара</th>
-                    <th>Изображение</th>
                     <th>Описание</th>
+                    <th>Изображение</th>
                     <th>Дата добавления</th>
                     <th></th>
                 </tr>
@@ -20,6 +20,10 @@
                         </td>
                         <td>
                             <?= $blogRecord->text ?>
+                        </td>
+
+                        <td>
+                            <img src="<?= $blogRecord->img ?>" alt=""/>
                         </td>
                         <td>
                             <?= $blogRecord->created_at ?>

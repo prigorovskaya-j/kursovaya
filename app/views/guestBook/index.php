@@ -45,7 +45,7 @@
             </div>
 
             <div class="tooltip" data-tooltip-text="Текст отзыва">
-                <p>Текст отзыва</p>
+                <p>Ваши пожелания о новых книгах</p>
                 <textarea name="text" id="text"><?php if( !empty($_POST["text"]) ) echo $_POST["text"]; ?></textarea>
                 <p class="error">Заполните Текст отзыва!</p>
                 <div class="tooltip-block"></div>
@@ -78,7 +78,7 @@
                 <tr>
                     <th>ФИО</th>
                     <th>Email</th>
-                    <th>Текст сообщения</th>
+                    <th>Ваши пожелания о новых книгах</th>
                     <th>Дата добавления</th>
                 </tr>
                 <?php foreach ($messages as $message): ?>
