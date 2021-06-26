@@ -22,7 +22,7 @@ class GuestBookController extends Controller
         $message = $this->model->getMessageFromFile("public/messages.inc");
         $message = $this->model->messageToArray($message);
 
-        $this->view->render("Гостевая книга", [
+        $this->view->render("Книга предложений", [
             "menuIndex" => 9,
             "messages" => $message,
             "errors" => $errors

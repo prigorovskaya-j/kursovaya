@@ -73,7 +73,7 @@ class BlogController extends Controller
 
 
 
-        $this->view->render("Редактирование блога", [
+        $this->view->render("Редактирование новости", [
             "menuIndex" => 10,
             "blogRecords" => $blogRecords,
             "blogNumPage" => $blogNumPage
@@ -89,6 +89,7 @@ class BlogController extends Controller
 
         $blog->title = $_POST["title"];
         $blog->text = $_POST["text"];
+        $blog->title = $_POST["img"];
 
         try {
             $blog->update();
@@ -96,7 +97,25 @@ class BlogController extends Controller
                 "icon" => "success",
                 "title" => "Данные успешно изменены",
                 "blogTitle" => $_POST["title"],
-                "blogText" => $_POST["text"],
+                "blogText" => $_POST["text"]
+            ]);
+        } catch (\Exception $e) {
+            echo json_encode([
+                "icon" => "error",
+                "title" => "При изменении произошла ошибка"
+            ]);
+        }
+    }
+    public function deleteRecordAction()
+    {
+        AdminPanelController::authenticate();
+        if (empty($_POST)) View::errorCode(404);
+        $blog = BlogModel::find($_POST["blog_id"]);
+        try {
+            $blog->delete();
+            echo json_encode([
+                "icon" => "success",
+                "title" => "Данные удалены",
             ]);
         } catch (\Exception $e) {
             echo json_encode([
