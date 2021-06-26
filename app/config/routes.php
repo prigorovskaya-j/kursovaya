@@ -16,31 +16,6 @@ return [
         "action" => "index"
     ],
 
-    "interests" => [
-        "controller" => "interests",
-        "action" => "index"
-    ],
-
-    "education" => [
-        "controller" => "education",
-        "action" => "index"
-    ],
-
-    "contacts" => [
-        "controller" => "contacts",
-        "action" => "index"
-    ],
-
-    "test" => [
-        "controller" => "test",
-        "action" => "index"
-    ],
-
-    "history" => [
-        "controller" => "history",
-        "action" => "index"
-    ],
-
     "guest-book" => [
         "controller" => "guestBook",
         "action" => "index"
