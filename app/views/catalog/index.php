@@ -7,7 +7,7 @@
         <?php if (!empty($blogRecords)): ?>
             <table>
                 <tr>
-                    <th>Наименование товара</th>
+                    <th>Название</th>
                     <th>Описание</th>
                     <th>Изображение</th>
                     <th>Дата добавления</th>
@@ -51,7 +51,7 @@
                 <?php if ($page == $i): ?>
                     <span class="active paginate__item"><?= $i ?></span>
                 <?php else: ?>
-                    <a href="blog?page=<?= $i ?>" class="paginate__item"> <?= $i ?> </a>
+                    <a href="catalog?page=<?= $i ?>" class="paginate__item"> <?= $i ?> </a>
                 <?php endif; ?>
 
             <?php endfor; ?>

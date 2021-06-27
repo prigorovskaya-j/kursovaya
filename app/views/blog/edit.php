@@ -3,7 +3,7 @@
         <span><?= $title ?></span>
     </section>
 
-    <div class="edit-blog-modal">
+    <div class="modal edit-blog-modal">
         <div class="modal__title">
             Редактирование новости
         </div>
@@ -15,19 +15,18 @@
                 </label>
 
                 <label for="fio">
-                    Тема записи
+                    Новость
                     <input type="text" name="title">
                 </label>
 
                 <label for="text">
-                    Текст сообщения
+                    Содержание
                     <input type="text" name="text">
                 </label>
 
                 <div class="modal__btn">
                     <button type="submit" class="main-btn">Изменить</button>
                 </div>
-
             </form>
         </div>
     </div>
@@ -37,7 +36,7 @@
             <div id="tooltip"></div>
 
             <div class="tooltip">
-                <p style="margin-top: 0">Тема сообщения</p>
+                <p style="margin-top: 0">Новость</p>
                 <input type="text"
                        id="title"
                        name="title"
@@ -48,11 +47,10 @@
 
 
             <div class="tooltip">
-                <p>Текст сообщения</p>
+                <p>Содержание</p>
                 <textarea id="text" name="text"><?php if( !empty($_POST["text"]) ) echo $_POST["text"]; ?></textarea>
                 <p class="error"></p>
             </div>
-            
 
             <button
                     id="sendBtn"
@@ -77,8 +75,8 @@
         <?php if( !empty($blogRecords) ): ?>
             <table class="blog-edit-table">
                 <tr>
-                    <th>Тема сообщения</th>
-                    <th>Текст сообщения</th>
+                    <th>Новость</th>
+                    <th>Содержание</th>
                     <th>Дата добавления</th>
                     <th></th>
                 </tr>
@@ -105,7 +103,7 @@
         <?php endif; ?>
 
         <div class="num-page">
-            Всего страниц: <?= $blogNumPage ?><br>
+            Количество страниц: <?= $blogNumPage ?><br>
         </div>
 
         <div class="paginate">

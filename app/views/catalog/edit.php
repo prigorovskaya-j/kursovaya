@@ -128,7 +128,7 @@
                 <?php if ($page == $i): ?>
                     <span class="active paginate__item"><?= $i ?></span>
                 <?php else: ?>
-                    <a href="/blog/edit?page=<?= $i ?>" class="paginate__item"> <?= $i ?> </a>
+                    <a href="/catalog/edit?page=<?= $i ?>" class="paginate__item"> <?= $i ?> </a>
                 <?php endif; ?>
 
             <?php endfor; ?>

@@ -2,53 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3028799c-369a-40f1-bf77-13f5c03cf01a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/AboutMeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/AboutMeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ContactsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/EducationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/GuestBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/GuestBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HistoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/InterestsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/TestController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/AdminPanelModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/AdminPanelModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/AlbumModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/AlbumModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/CatalogModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/CatalogModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ContactsModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/InterestsModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/TestModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/VisitStatisticModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Education/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/album/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/album/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/CatalogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/CatalogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/BaseActiveRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/BaseActiveRecord.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/blog/blogContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blog/blogContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/blog/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blog/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blog/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/blog/load.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blog/load.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/catalog/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/catalog/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/catalog/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/catalog/load.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/catalog/load.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/guestBook/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/guestBook/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/history/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/interests/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/test/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/visitStatistic/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blogMessages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/public/blogMessages.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/checkForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/checkForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/messages.inc" beforeDir="false" afterPath="$PROJECT_DIR$/public/messages.inc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../labOne.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../labFourFour.local" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,6 +56,8 @@
       <workItem from="1624655686966" duration="54000" />
       <workItem from="1624655764299" duration="8946000" />
       <workItem from="1624695362928" duration="7668000" />
+      <workItem from="1624739733581" duration="2387000" />
+      <workItem from="1624799771736" duration="4890000" />
     </task>
     <servers />
   </component>

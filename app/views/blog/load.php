@@ -30,22 +30,22 @@
             </div>
 
             <button
-                id="sendBtn"
-                class="main-btn btn-show-modal"
-                data-modal-text="Отправить данные?"
-                data-btn-callback="checkTestForm"
-                type="submit"
-                name="button"
+                    id="sendBtn"
+                    class="main-btn btn-show-modal"
+                    data-modal-text="Отправить данные?"
+                    data-btn-callback="checkTestForm"
+                    type="submit"
+                    name="button"
             >
                 Отправить
             </button>
             <button
-                id="resetBtn"
-                class="main-btn btn-show-modal"
-                data-modal-text="Стереть данные?"
-                data-btn-callback="resetForm"
-                type="reset"
-                name="button"
+                    id="resetBtn"
+                    class="main-btn btn-show-modal"
+                    data-modal-text="Стереть данные?"
+                    data-btn-callback="resetForm"
+                    type="reset"
+                    name="button"
             >
                 Очистить форму
             </button>
@@ -54,9 +54,8 @@
         <?php if( !empty( $messages ) ): ?>
             <table>
                 <tr>
-                    <th>Тема сообщения</th>
-                    <th>Текст сообщения</th>
-                    <th>Изображение</th>
+                    <th>Новость</th>
+                    <th>Содержание</th>
                     <th>Дата добавления</th>
                 </tr>
                 <?php foreach ($messages as $message): ?>
@@ -66,9 +65,6 @@
                         </td>
                         <td>
                             <?= $message->text ?>
-                        </td>
-                        <td>
-                            <img src="/public/img/<?= $message->img ?>" alt="">
                         </td>
                         <td>
                             <?= $message->created_at ?>

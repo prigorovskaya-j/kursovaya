@@ -89,6 +89,7 @@
                         </td>
                     <?php endforeach; ?>
                 </tr>
+                <br>
                 <?php endforeach; ?>
             </table>
         <?php endif; ?>

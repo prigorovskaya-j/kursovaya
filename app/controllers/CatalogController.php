@@ -18,7 +18,7 @@ class CatalogController extends Controller
             $blogRecords = CatalogModel::paginate(self::PAGES);
             $blogNumPage = ceil(CatalogModel::getNumRow() / self::PAGES);
 
-            $this->view->render("Новости", [
+            $this->view->render("Каталог", [
                 "menuIndex" => 11,
                 "blogRecords" => $blogRecords,
                 "blogNumPage" => $blogNumPage

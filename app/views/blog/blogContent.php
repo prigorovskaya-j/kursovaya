@@ -5,7 +5,7 @@
 
     <div class="modal blog-comment-modal">
         <div class="modal__title">
-            Добавление комментария
+            Комментарий
         </div>
         <div class="modal__desc">
             <form action="/blog/addComment" method="post" class="main-form">

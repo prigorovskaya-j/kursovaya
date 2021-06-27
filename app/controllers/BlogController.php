@@ -10,7 +10,7 @@ use app\models\CommentsModel;
 
 class BlogController extends Controller
 {
-    const PAGES = 4;
+    const PAGES = 7;
 
     public function indexAction()
     {
@@ -38,7 +38,7 @@ class BlogController extends Controller
         try {
             $comment->save();
             echo "<div class=\"comments__item\">
-                        <p class=\"comments__num\">Комментарий #". ($last_comment_num + 1) ."</p>
+                        <p class=\"comments__num\">Комментарий №". ($last_comment_num + 1) ."</p>
                         <span>
                             $comment->comment_text
                         </span>
@@ -65,7 +65,6 @@ class BlogController extends Controller
 
     public function editAction()
     {
-
         AdminPanelController::authenticate();
 
         $blogRecords = BlogModel::paginate(self::PAGES);
@@ -89,7 +88,6 @@ class BlogController extends Controller
 
         $blog->title = $_POST["title"];
         $blog->text = $_POST["text"];
-        $blog->title = $_POST["img"];
 
         try {
             $blog->update();
@@ -97,25 +95,7 @@ class BlogController extends Controller
                 "icon" => "success",
                 "title" => "Данные успешно изменены",
                 "blogTitle" => $_POST["title"],
-                "blogText" => $_POST["text"]
-            ]);
-        } catch (\Exception $e) {
-            echo json_encode([
-                "icon" => "error",
-                "title" => "При изменении произошла ошибка"
-            ]);
-        }
-    }
-    public function deleteRecordAction()
-    {
-        AdminPanelController::authenticate();
-        if (empty($_POST)) View::errorCode(404);
-        $blog = BlogModel::find($_POST["blog_id"]);
-        try {
-            $blog->delete();
-            echo json_encode([
-                "icon" => "success",
-                "title" => "Данные удалены",
+                "blogText" => $_POST["text"],
             ]);
         } catch (\Exception $e) {
             echo json_encode([
@@ -138,7 +118,7 @@ class BlogController extends Controller
             } else $errors[] = "Файл не существует";
         }
 
-        $this->view->render("Загрузка сообщений блога", [
+        $this->view->render("Загрузка новостей", [
             "menuIndex" => 10,
             "messages" => BlogModel::all("created_at", "ASC")
         ]);

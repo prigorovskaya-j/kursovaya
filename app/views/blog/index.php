@@ -7,8 +7,8 @@
         <?php if (!empty($blogRecords)): ?>
             <table>
                 <tr>
-                    <th>Тема сообщения</th>
-                    <th>Текст сообщения</th>
+                    <th>Новость</th>
+                    <th>Содержание</th>
                     <th>Дата добавления</th>
                     <th></th>
                 </tr>
@@ -35,7 +35,7 @@
 
 
         <div class="num-page">
-            Всего страниц: <?= $blogNumPage ?><br>
+            Количество страниц: <?= $blogNumPage ?><br>
         </div>
 
         <div class="paginate">

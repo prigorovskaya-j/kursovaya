@@ -42,7 +42,7 @@ class BaseActiveRecord extends Model
     public static function setupConnection() {
         if (!isset(static::$pdo)) {
             try {
-                static::$pdo = new PDO("mysql:dbname=site_db; host=localhost; charset=utf8", "Prigorovskaya", "rusalka12042000");
+                static::$pdo = new PDO("mysql:dbname=site_web; host=localhost; charset=utf8", "Prigorovskaya", "rusalka12042000");
             } catch (PDOException $ex) {
                 die("Ошибка подключения к БД: $ex");
             }
